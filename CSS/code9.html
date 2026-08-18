@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+      }
+      .box img {
+        width: 100%;
+        height: auto;
+      }
+      .para {
+        position: absolute;
+        top: 0;
+        backdrop-filter: blur(20px);
+        color: white;
+        padding: 20px;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        transition: all 0.2s linear;
+      }
+      .box:hover .para {
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img src="../WhatsApp Image 2025-12-21 at 11.04.31 AM (1).jpeg" alt="" />
+
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quia nobis
+        praesentium aut nemo possimus deleniti deserunt, accusamus nam ratione
+        incidunt tempora voluptatem assumenda, neque quisquam tempore non, eum
+        vel?
+      </p>
+    </div>
+  </body>
+</html>
