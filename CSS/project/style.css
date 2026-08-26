@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(18, 18, 54);
+  color: white;
+  padding: 20px;
+  align-items: center;
+  font-family: sans-serif;
+}
+.logo,
+.bar {
+  font-size: 20px;
+}
+ul {
+  display: none;
+}
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+@media only screen and (min-width: 500px) {
+  ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+  }
+  .bar {
+    display: none;
+  }
+}

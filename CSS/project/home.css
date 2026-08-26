@@ -1,0 +1,40 @@
+.heroSection {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.9;
+}
+.text h1 {
+  font-family: monospace;
+}
+.text p {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+.text button {
+  background-color: rgb(8, 8, 48);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+button:hover {
+  background-color: darkblue;
+}
+
+.image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 700px) {
+  .heroSection {
+    flex-direction: row;
+  }
+  .image img {
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+  }
+}
