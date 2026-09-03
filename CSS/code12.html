@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* laptop */
+
+      .nav {
+        background-color: rgb(252, 87, 87);
+        border: 4px solid rgb(180, 1, 1);
+        width: 100%;
+        padding: 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      ul {
+        display: flex;
+        list-style-type: none;
+        gap: 20px;
+      }
+      .bar {
+        font-size: 30px;
+        display: none;
+      }
+      /* phone  */
+      @media only screen and (max-width: 500px) {
+        .nav {
+          background-color: rgb(139, 139, 241);
+          border: 4px solid rgb(1, 7, 180);
+        }
+        ul {
+          display: none;
+        }
+        .bar {
+          display: block;
+        }
+      }
+
+      @media only screen and (max-width: 300px) {
+        .nav {
+          background-color: rgb(241, 239, 139);
+          border: 4px solid rgb(180, 171, 1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo">LOGO</div>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Content</li>
+        <li>Projects</li>
+        <li>Services</li>
+      </ul>
+      <div class="bar">⏸️</div>
+    </div>
+  </body>
+</html>
