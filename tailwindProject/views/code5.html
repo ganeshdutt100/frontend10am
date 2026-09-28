@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwind">
+      @custom-variant dark (&:where(.dark ,.dark *));
+    </style>
+  </head>
+  <body>
+    <nav
+      class="flex justify-around py-4 bg-amber-600 dark:text-white dark:bg-black"
+    >
+      <div class="logo"><span>G</span>D</div>
+      <div class="flex gap-4">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Project</a>
+        <a href="#">Services</a>
+        <button
+          onclick="toggleDarkMode()"
+          class="bg-white text-black py-2 px-4 rounded-3xl"
+        >
+          dark Mode
+        </button>
+      </div>
+    </nav>
+
+    <script>
+      function toggleDarkMode() {
+        document.documentElement.classList.toggle("dark");
+      }
+    </script>
+  </body>
+</html>
