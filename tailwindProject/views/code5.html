@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <style type="text/tailwind">
+    <style type="text/tailwindcss">
       @custom-variant dark (&:where(.dark ,.dark *));
     </style>
   </head>
@@ -22,12 +22,17 @@
         <a href="#">Services</a>
         <button
           onclick="toggleDarkMode()"
-          class="bg-white text-black py-2 px-4 rounded-3xl"
+          class="text-white bg-black dark:bg-white dark:text-black py-2 px-4 rounded-3xl"
         >
           dark Mode
         </button>
       </div>
     </nav>
+    <div
+      class="h-100 dark:bg-gray-900 dark:text-white flex justify-center items-center"
+    >
+      <h1 class="text-4xl font-bold">Lorem ipsum dolor sit amet.</h1>
+    </div>
 
     <script>
       function toggleDarkMode() {
