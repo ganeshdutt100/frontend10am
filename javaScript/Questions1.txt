@@ -1,0 +1,80 @@
+1. Basic if Questions
+Write a JavaScript program to check whether a number is positive.
+Write a program to check whether a person is eligible to vote if their age is 18 or above.
+Write a program to check whether a number is even.
+Write a program to check whether a student has passed if marks are 40 or above.
+Write a program to check whether a number is greater than 100.
+Write a program to check whether a person is eligible for driving based on age.
+Write a program to check whether a given character is "a".
+Write a program to check whether the temperature is greater than 30°C.
+
+2. if-else Questions
+Write a program to check whether a number is even or odd.
+Write a program to check whether a person is eligible or not eligible to vote.
+Write a program to check whether a student has passed or failed.
+Write a program to check whether a number is positive or negative.
+Write a program to check whether two numbers are equal or not.
+Write a program to check whether a person is eligible or not eligible for a driving license.
+Write a program to check whether a given number is divisible by 5 or not.
+Write a program to check whether a password is "admin123" or not.
+
+3. else-if Ladder Questions
+Write a program to print grades according to marks:
+90–100 → A
+80–89 → B
+70–79 → C
+60–69 → D
+Below 60 → Fail
+
+Write a program to check whether a number is:
+Positive
+Negative
+Zero
+Write a program to print a message according to temperature:
+Above 40 → Very Hot
+30–40 → Hot
+20–29 → Normal
+Below 20 → Cold
+
+Write a program to calculate discount according to purchase amount:
+₹10,000 or above → 20%
+₹5,000–₹9,999 → 10%
+₹2,000–₹4,999 → 5%
+Below ₹2,000 → No discount
+
+Write a program to print the day type based on day number:
+1 → Monday
+2 → Tuesday
+...
+7 → Sunday
+Write a program to categorize age:
+0–12 → Child
+13–19 → Teenager
+20–59 → Adult
+60+ → Senior Citizen
+Write a program to find the largest among three numbers using if-else-if.
+
+
+4. Nested if-else Questions
+Write a program to check whether a person is eligible to vote. If eligible, then check whether they are eligible for a senior citizen benefit.
+
+Write a program to check whether a student has passed. If passed, then check whether the student has received Distinction (marks ≥ 75).
+
+Write a program to check whether a number is positive. If positive, then check whether it is even or odd.
+
+Write a program for login:
+First check whether username is correct.
+If username is correct, then check the password.
+Display "Login Successful" only when both are correct.
+
+Write a program to check eligibility for a job:
+First check whether age is 18 or above.
+If eligible by age, check whether qualification is "B.Tech".
+If both conditions are satisfied, display "Eligible".
+
+Write a program to check whether a student passed in Maths. If passed, then check whether they also passed in English.
+
+Write a program to check whether a person can enter a movie:
+First check whether age is 18 or above.
+If eligible, check whether they have a valid ticket.
+Display "Entry Allowed" only if both conditions are true.
