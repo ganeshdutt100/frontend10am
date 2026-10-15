@@ -27,9 +27,9 @@ let value = [11, 22, 33, 44, 5, 66, 5];
 
 // Write a program to find the second-largest number in an array without using the sort() method.
 
-let sum = 0;
-for (let i = 0; i < value.length; i++) {
-  //   console.log(i, value[i]);
-  sum = value[i] + sum;
-}
-console.log(sum);
+// let sum = 0;
+// for (let i = 0; i < value.length; i++) {
+//   //   console.log(i, value[i]);
+//   sum = value[i] + sum;
+// }
+// console.log(sum);
