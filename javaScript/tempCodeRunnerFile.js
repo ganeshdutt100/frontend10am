@@ -1,1 +1,2 @@
-4, 56, 12, 78, 8, 
+
+// let output = arr.filter((x) => x % 2 ==
