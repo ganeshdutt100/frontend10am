@@ -1,5 +1,10 @@
-let arr = [4, 14, 2, 31, 45, 67];
+// let arr = [4, 14, 2, 31, 45, 67];
 
+let name = "Keshav";
+// let output = Array.of(name, 7);
+// let output = Array.from(name);
+
+console.log(output);
 // for (let x of arr.keys()) {
 //   console.log(x);
 // }
