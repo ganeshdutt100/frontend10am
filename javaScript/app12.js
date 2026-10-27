@@ -45,3 +45,13 @@ let a =
 // (function () {
 //   console.log("Hello from iife fun");
 // })();
+
+function fun(a, b) {
+  console.log("screen  :  ", a + b);
+}
+function fun1(a, b) {
+  return a + b;
+}
+
+let output = fun1(12, 78);
+console.log(output);
