@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1 id="headingName">loading...</h1>
+    <p class="userDetails">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus hic
+      laborum et expedita! Ut accusantium neque animi cumque magnam omnis qui
+      doloribus similique fugiat, dolorum quisquam, dolor quia assumenda
+      dolores!
+    </p>
+
+    <p class="userDetails">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus hic
+      laborum et expedita! Ut accusantium neque animi cumque magnam omnis qui
+      doloribus similique fugiat, dolorum quisquam, dolor quia assumenda
+      dolores!
+    </p>
+
+    <p class="userDetails">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus hic
+      laborum et expedita! Ut accusantium neque animi cumque magnam omnis qui
+      doloribus similique fugiat, dolorum quisquam, dolor quia assumenda
+      dolores!
+    </p>
+
+    <p class="userDetails">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus hic
+      laborum et expedita! Ut accusantium neque animi cumque magnam omnis qui
+      doloribus similique fugiat, dolorum quisquam, dolor quia assumenda
+      dolores!
+    </p>
+    <button onclick="userName()">Click name</button>
+
+    <script>
+      function userName() {
+        let name = document.getElementById("headingName");
+
+        // let userDetail = document.getElementsByClassName("userDetails");
+
+        // let userDetail = document.querySelector(".userDetails");
+
+        let tagName = document.getElementsByTagName("p");
+
+        // let userDetail = document.querySelectorAll(".userDetails");
+
+        name.innerHTML = "Ashish";
+        name.style.color = "red";
+
+        userDetail[2].style.color = "green";
+
+        tagName[1].backgroundColor = "red";
+      }
+    </script>
+  </body>
+</html>
