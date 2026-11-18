@@ -6,8 +6,9 @@
     <title>Document</title>
   </head>
   <body>
-    <button>click me</button>
+    <!-- <button>click me</button> -->
     <h1>Loading...</h1>
+    <button>❌</button>
     <script>
       let btn = document.querySelector("button");
       btn.addEventListener("click", () => {
@@ -21,7 +22,6 @@
         // let a = window.prompt("Enter your number");
         // alert(a);
         // alert("Loading...");
-
         // let a = setTimeout(() => {
         //   alert("class 10am");
         // }, 3000);
@@ -29,15 +29,18 @@
         // setInterval(() => {
         //   alert("hello");
         // }, 1000);
-        setInterval(() => {
-          // console.log("hello ");
-          let fullTime = new Date();
+        //         setInterval(() => {
+        //           // console.log("hello ");
+        //           let fullTime = new Date();
+        //
+        //           let time = fullTime.toLocaleTimeString();
+        //           let timeDisplay = document.querySelector("h1");
+        //           timeDisplay.innerText = time;
+        //           console.log(time);
+        //         }, 1000);
 
-          let time = fullTime.toLocaleTimeString();
-          let timeDisplay = document.querySelector("h1");
-          timeDisplay.innerText = time;
-          console.log(time);
-        }, 1000);
+        // open("https://ganeshdutt.vercel.app");
+        close();
       });
     </script>
   </body>
