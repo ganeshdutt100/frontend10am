@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">click</button>
+    <div id="container"></div>
+    <script>
+      //   function fun() {
+      //     console.log("Button clicked!");
+      //   }
+      //   document.getElementById("btn").addEventListener("click", function () {
+      //     console.log("Button clicked!");
+      //   });
+
+      var newDiv = document.createElement("h1");
+      newDiv.textContent = "This is a new div!";
+      document.getElementById("container").appendChild(newDiv);
+
+      document.getElementById("container").removeChild(newDiv);
+    </script>
+  </body>
+</html>
