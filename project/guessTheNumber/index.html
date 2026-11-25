@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="game">
+      <h1 style="text-align: center">Guess the Number Game</h1>
+      <div class="main">
+        <h2>You guess the Number 1 to 10</h2>
+        <div class="input-container">
+          <input type="text" id="Guess" required="" />
+          <label for="input" class="label">Enter Text</label>
+          <div class="underline"></div>
+        </div>
+        <!-- <input type="number" id="Guess"  size="30"> <br> -->
+        <button class="btn-53" onclick="guesstheNUmber()">
+          <div class="original">GUESS NUM</div>
+          <div class="letters">
+            <span>G</span>
+            <span>U</span>
+            <span>E</span>
+            <span>S</span>
+            <span>S</span>
+            <!-- <span>N</span> -->
+          </div>
+        </button>
+        <!-- <button   class="btn">Click me </button> -->
+        <h2 style="text-align: center; color: black" id="inputPera">...</h2>
+      </div>
+    </div>
+    <script>
+      let randomNumber = Math.floor(Math.random() * 10) + 1;
+      console.log(randomNumber);
+      let count = 0;
+
+      function guesstheNUmber() {
+        let inputConncet = document.getElementById("Guess").value;
+
+        if (inputConncet < 0 || inputConncet > 10 || isNaN(inputConncet)) {
+          alert("this is wrong Number : ");
+        }
+        count++;
+
+        if (inputConncet == randomNumber) {
+          document.getElementById("inputPera").innerHTML =
+            `Congratulations! You guessed the correct number! with in : ${count} times and Computer Choose   :  ${randomNumber}`;
+          inputPera.style.color = "black";
+          inputPera.style.backgroundColor = "white";
+        } else if (inputConncet > randomNumber) {
+          document.getElementById("inputPera").innerHTML =
+            "Too high. Try again.";
+          inputPera.style.color = "red";
+          // inputPera.style.backgroundColor = 'white';
+
+          // inputPera.style.backgroundColor = 'white';
+        } else if (inputConncet < randomNumber) {
+          document.getElementById("inputPera").innerHTML = "Too low. Try again";
+          inputPera.style.color = "red";
+          //  inputPera.style.backgroundColor = 'white';
+        }
+        if (count > 6) {
+          document.getElementById("inputPera").innerHTML =
+            "Na Munna Na tumse na ho payega";
+          inputPera.style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>

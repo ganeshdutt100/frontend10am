@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="history.back()"><--</button>
+    <button onclick="history.forward()">--></button>
+    <a href="code1.html">data</a>
+    <script>
+      function fun() {
+        print();
+      }
+
+      console.log("Browser Version:", window.navigator.appVersion);
+
+      console.log(
+        "Cookies Enabled:",
+        window.navigator.cookieEnabled ? "Yes" : "No",
+      );
+
+      console.log("Preferred Language:", window.navigator.language);
+
+      console.log("Screen width:", window.screen.width);
+      console.log("Screen height:", window.screen.height);
+      console.log("Available width:", window.screen.availWidth);
+      console.log("Available height:", window.screen.availHeight);
+      console.log("Color depth:", window.screen.colorDepth);
+      console.log("Pixel depth:", window.screen.pixelDepth);
+      console.log("Orientation:", window.screen.orientation.type);
+    </script>
+  </body>
+</html>
