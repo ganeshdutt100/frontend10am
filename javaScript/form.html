@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" name="myForm">
+      name : <input type="text" name="inputName" id="name" />
+      <span id="demo"></span>
+      <br />
+      Password : <input type="password" name="password" id="pass" />
+      <span id="pass"></span> <br />
+      <input type="submit" value="submit" onclick="return formValidate();" />
+    </form>
+    <script>
+      function formValidate() {
+        var name = document.myForm.inputName;
+        var password = document.myForm.password.value;
+
+        if (name.trim() === "") {
+          document.getElementById("demo").innerHTML = "Name cannot be empty";
+          return false;
+        } else if (password.length < 6) {
+          // alert("password must be at least 6 characters");
+          document.getElementById("pass").innerHTML =
+            "password must be at least 6 characters";
+
+          return false;
+        }
+
+        return true;
+      }
+    </script>
+  </body>
+</html>
